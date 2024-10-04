@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "isve-google-api"
+location: "europe-west1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "postgres"
+      cloudSql:
+        instanceId: "isve-google-api-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
